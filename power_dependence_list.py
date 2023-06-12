@@ -28,7 +28,7 @@ def powers(max_power, min_power, factor):
 powers_list = powers(max_power, min_power, factor)
 
 # round to three decimal points
-powers_list = [round(i, 3) for i in powers_list]
+powers_list = [float(f'{i:0.3g}') for i in powers_list]
 
 # create a data frame to save the data
 dataframe = pd.DataFrame()
